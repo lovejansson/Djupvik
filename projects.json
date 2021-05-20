@@ -1,0 +1,57 @@
+[{
+    "id": "1",
+    "title": "Comet raids",
+    "description_short": "2D spel skrivet med C++ och SFML",
+    "description_long": "Detta var det första projektet jag gjorde tillsammans med en klasskamrat i en kurs om objektorientering. Spelarens uppgift är att förstöra kometer som närmar sig jorden. Detta sker genom nogrann placering av bomber inuti kometerna. På vägen måste spelaren akta sig för svävande isblock av varierande storlek genom att skjuta sönder dem. Spelaren navigerar en farkost genom att använda tagentbordets w, a, s, d. q och e tagenter. Dessa kontrollerar farkostens rörelser i två dimentioner samt rotation. Till sin hjälp har spelaren vapen i form av projektiler som avfyras med Space-bar samt bomber som avfyras med b-tangenten.",
+    "year": "2019",
+    "techniques": ["C++", "SFML"],
+    "github": "",
+    "images": ["images/comet_raids_1.png", "images/comet_raids_2.png"]
+},
+
+{
+    "id": "2",
+    "title": "Vanilla",
+    "description_short": "Imperativt programmeringsspråk",
+    "description_long": "",
+    "year": "2020",
+    "techniques": ["Ruby"],
+    "images": ["images/vanilla1.png", "images/vanilla2.png"],
+    "github": ""
+},
+
+
+{
+    "id": "3",
+    "title": "theChat",
+    "description_short": "Peer-to-peer chatt-app",
+    "description_long": "Denna applikation har jag gjort tillsammans med en klasskamrat under en projektkurs. I och med detta fick vi testa på att använda ett nytt programmeringsspråk C#, skriva ett program för desktops samt implementera socket connections.",
+    "year": "2020",
+    "techniques": ["C#", ".NET"],
+    "images": ["images/theChat1.png", "images/theChat2.png",  "images/theChat3.png"],
+    "github": ""
+},
+
+{
+    "id": "4",
+    "title": "Qfilm",
+    "description_short": "Film app för HBTQ+ filmer",
+    "description_long": "Denna applikation gjorde jag under termin 3 och är skriven i Android Java. Förutom att Android var nytt lärde jag mig också designmönstret MVVM, användning av ramverk för dependency injections och testning med hjälp av 'mocks'",
+    "year": "2020",
+    "techniques": ["Android", "Java", "Dagger2", "Mockito"],
+    "images": ["images/qfilm1.png", "images/qfilm2.png",  "images/qfilm3.png"],
+    "github": ""
+},
+
+{
+    "id": "5",
+    "title": "Transportliggaren",
+    "description_short": "En applikation för planering av transporter",
+    "description_long": "I termin 4 har vi haft en projektkurs där vi i grupp på 5 personer har samarbetat med ett företag för att ta fram ett nytt system till dem. Applikationen ska användas till att planera resor, hantera felanmälningar av fordon samt som schema för chaufförerna i verksamheten.",
+    "year": "2021",
+    "techniques": ["Svelte"],
+    "images": ["images/qfilm1.png", "images/qfilm2.png",  "images/qfilm3.png"],
+    "github": ""
+}
+
+]
