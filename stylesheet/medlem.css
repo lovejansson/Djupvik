@@ -1,0 +1,77 @@
+h5 {
+    color: #51565C;
+    font-size: 1.4rem;
+    margin-bottom: 1em
+}
+
+h2 {
+    margin-top: .5em
+}
+
+main a:nth-child(1)::before {
+    content: "‹";
+    font-size: 1.2em
+}
+
+main a:nth-child(1):hover {
+    text-decoration: none
+}
+
+main a:nth-child(1):focus {
+    text-decoration: none;
+    outline: 2px dotted #11243d
+}
+
+aside ul {
+    margin-top: .5em
+}
+
+table {
+    min-width: 40rem
+}
+
+table+a::before {
+    content: "› ";
+    font-size: 1.2em
+}
+
+@media screen and (min-width:50rem) {
+    #inner-content {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    aside {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width:34.375rem) {
+    table {
+        min-width: 0;
+    }
+    th {
+        display: none
+    }
+    td {
+        display: block;
+        position: relative;
+        padding: .5em 0 .5em 5em;
+        margin-right: 1em
+    }
+    td::before {
+        content: "Namn";
+        position: absolute;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #11243d;
+        font-size: 1.2rem;
+        top: 1em;
+        left: 0
+    }
+    td:nth-child(2)::before {
+        content: "E-post "
+    }
+    td:nth-child(3)::before {
+        content: "Telefon "
+    }
+}

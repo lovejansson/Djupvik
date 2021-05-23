@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Djupvik </title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/reset.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/main.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/main_aside_responsive.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/carousel.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&family=EB+Garamond&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="script/carousel/main.js" type="module"></script>
+    <script src="script/main.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+
+        <a id="skip-link" href="#inner-content">Hoppa över navigering</a>
+
+        <a id="logo" href="#" aria-label="Djupviks startsida">
+            <h1>Djupvik</h1>
+            <p>Ett fiskeläge på Gotland</p>
+        </a>
+        <nav>
+            <div id="menu">
+                <ul id="menu-link-list">
+                    <li><a href="html/gasthamn.html">Gästhamn</a></li>
+                    <li><a href="html/turistmal.html">Turistmål</a></li>
+                    <li><a href="html/kontakt.html"> Kontakt</a></li>
+                    <li><a href="html/medlemsinfo.html"> Medlemsinfo</a></li>
+                    <li><a href="html/english.html"> In English</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="inner-content">
+
+        <section id="carousel" aria-label="Slideshow med bilder på Djupvik">
+            <div id="carousel-slider">
+                <ul id=carousel-slide-container>
+                    <li class="carousel-slide">
+                        <picture>
+                            <source media="(max-width:699px)" srcset="images/mobile/djupviks_hamn.jpg">
+                            <source media="(min-width:700px)" srcset="images/desktop/djupviks_hamn.jpg">
+                            <img src="images/desktop/djupviks_hamn.jpg" alt="Fiskebodar vid hamnbryggan i Djupvik" width="1125" height="633">
+                        </picture>
+                    </li>
+
+                    <li class="carousel-slide hidden">
+                        <picture>
+                            <source media="(max-width:699px)" srcset="images/mobile/fiskebodar.jpg">
+                            <source media="(min-width:700px)" srcset="images/desktop/fiskebodar.jpg">
+                            <img src="images/desktop/fiskebodar.jpg" alt="Fiskebodar" width="1125" height="633"></picture>
+                    </li>
+
+                    <li class="carousel-slide hidden">
+                        <picture>
+                            <source media="(max-width:699px)" srcset="images/mobile/skeppssättning.jpg">
+                            <source media="(min-width:700px)" srcset="images/desktop/skeppssättning.jpg">
+                            <img src="images/desktop/skepssättning.jpg" alt="Skeppssättning" width="1125" height="633">
+                        </picture>
+                    </li>
+
+                    <li class="carousel-slide hidden">
+                        <picture>
+                            <source media="(max-width:699px)" srcset="images/mobile/karlsö_utsikt.jpg">
+                            <source media="(min-width:700px)" srcset="images/desktop/karlsö_utsikt.jpg">
+                            <img src=" images/desktop/karlsö_utsikt.jpg" alt="Utsikt till lilla karlsö" width="1125" height="633">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <main>
+            <h2>Välkommen till Djupviks hamn</h2>
+
+            <p>Djupviks hamn ligger på Gotlands västkust nästan rakt öster om Lilla Karlsö. Hamnen är <em>otroligt vackert </em>belägen i anslutning till ett gammalt Gotländskt fiskeläge bestående av fiskebodar från sent 1800-tal, läs mer om <a href="html/historia.html">Djupviks historia</a>.
+                <br/>Husen är grupperade i tre rader, mellan dem ligger gistgarden där man torkar nät och närmast stranden ligger båthusen. Från fiskeläget har man fri utsikt mot de båda Karlsöarna.
+            </p>
+
+            <p>Ansvaret för hamnen och fiskeläget har Djupviks hamnförening, som är en ideell förening som aktivt verkar för att bibehålla och utveckla Djupvik som fiskehamn och som fritidsbåtshamn för de många närboende och sommarboende. Föreningen driver
+                en glasskiosk och kaffeservering på sommartid i ett gammalt båthus vid hamnen.
+            </p>
+
+            <p>Ett par hundra meter ovanför hamnen ligger Djupviks Hotell, ett hotell med restaurang och bra standard. Det finns även toaletter i hamnen varav en som är tillgänglighetsanpassad för rullstolar och rollatorer.</p>
+        </main>
+
+        <aside>
+            <h2>Senaste nytt </h2>
+            <ul id="news-list">
+                <li>
+                    <p><time datetime="2019-04-06">2019-04-06</time></p><a href="html/nyheter.html#news-one">Hamnjobb </a></li>
+                <li>
+                    <p><time datetime="2018-07-16">2018-07-16</time></p><a href="html/nyheter.html#news-two">Succé för hamnens dag </a></li>
+                <li><a href="html/nyheter.html">Alla nyheter </a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <section>
+            <h2>Kontakt</h2>
+            <p><span aria-hidden="true">&#9742; </span><span class="visually-hidden">Telefonnummer</span>070-792 03 10 </p>
+            <p><span aria-hidden="true">&#9993; </span><span class="visually-hidden">Epost</span>info@djupvikshamn.se </p><a href="html/kontakt.html">Skicka ett meddelande</a>
+        </section>
+
+        <section>
+            <h2>Hitta hit</h2><a href="https://goo.gl/maps/CnTrM78wU9hpmgd36" target="_blank" class="material-icons" aria-label="Djupvik på google maps">place</a>
+            <p>Djupviks hamn</p>
+            <p>623 54 Klintehamn</p>
+        </section>
+
+        <small>&copy;2020 Djupviks hamn</small>
+    </footer>
+</body>
+
+</html>

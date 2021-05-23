@@ -1,0 +1,421 @@
+@font-face {
+    src: url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+    font-family: "Cookie"
+}
+
+@font-face {
+    src: url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+    font-family: "EB Garamond"
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 10em
+}
+
+body {
+    font-family: "EB Garamond", serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background-color: #E8EBEE;
+    color: #51565C
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+#starting-image img {
+    display: block;
+    margin: 0 auto
+}
+
+figure {
+    margin: 2em 0
+}
+
+figcaption {
+    font-style: italic;
+    color: #51565C;
+    font-size: 1.6rem
+}
+
+button {
+    border: none;
+    line-height: normal;
+    padding: 0;
+    margin: 0
+}
+
+.asterisk {
+    color: red
+}
+
+p strong {
+    font-style: italic
+}
+
+.hidden {
+    display: none
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #11243d
+}
+
+h1,
+h2 {
+    font-family: "Cookie", cursive
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: -.2em
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-bottom: .5em
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1em
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: .5em
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #11243d;
+    text-decoration: none
+}
+
+a {
+    font-weight: bold
+}
+
+a:focus,
+button:focus,
+button:hover {
+    outline: 2px dotted #11243d
+}
+
+header {
+    background-color: #fff;
+    border-bottom: solid 2px #11243d;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1
+}
+
+#skip-link {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    background: #11243d;
+    color: #fff;
+    padding: .25em .5em;
+    position: absolute;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -300%);
+    transition: transform .3s
+}
+
+#logo {
+    font-weight: lighter;
+    text-align: center;
+    margin: 2em 1em 2em 0.5em;
+    padding: 0 .5em
+}
+
+header p {
+    font-size: 1.4rem;
+    font-style: italic;
+    white-space: nowrap;
+    margin-top: -.4em
+}
+
+nav {
+    margin-bottom: 2em
+}
+
+#btn-menu-close:hover,
+#btn-menu-open:hover {
+    outline: none
+}
+
+#btn-menu-open {
+    background-color: #11243d;
+    color: #fff;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    border-radius: 5%;
+    padding: .6em .8em;
+    margin-right: 1em;
+    margin-top: 50%
+}
+
+#btn-menu-open:focus {
+    outline-offset: .2em
+}
+
+#menu {
+    background-color: #E8EBEE;
+    height: 100%;
+    width: 0;
+    padding-top: 5em;
+    visibility: hidden;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    transition: .5s linear
+}
+
+#btn-menu-close {
+    color: #11243d;
+    background-color: inherit;
+    font-size: 4rem;
+    padding: .1em .2em 0 .2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: .75em;
+    margin-right: .75em
+}
+
+#menu-link-list li {
+    text-transform: uppercase;
+    padding: 1em
+}
+
+#menu-link-list a {
+    font-weight: lighter;
+    white-space: nowrap
+}
+
+#menu-link-list a::before {
+    content: "\2699\00A0";
+    font-size: 1.2em;
+    visibility: hidden
+}
+
+#menu-link-list a:hover::before,
+#menu-link-list a:focus::before {
+    visibility: visible
+}
+
+#inner-content {
+    background-color: #fff;
+    margin: 10rem auto 0;
+    padding-bottom: 4rem
+}
+
+main {
+    margin: 2.5rem 2.5rem 0 2.5rem
+}
+
+main section,
+aside section {
+    margin-bottom: 5rem
+}
+
+main section:last-child {
+    margin-bottom: 0
+}
+
+aside section:last-child {
+    margin-bottom: 0
+}
+
+main p {
+    margin-bottom: 1em
+}
+
+main a:visited,
+main a:hover,
+main a:active {
+    text-decoration: underline;
+    outline: none
+}
+
+aside {
+    margin: 5rem 2.5rem 0 2.5rem
+}
+
+aside ul {
+    background-color: #E8EBEE;
+    max-width: 30rem;
+    padding: .5em .75em
+}
+
+aside li {
+    margin: .75em 0
+}
+
+aside #news-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+aside #news-list li {
+    margin: .25em 0
+}
+
+aside #news-list li:last-child {
+    font-size: 1.4rem;
+    align-self: flex-end
+}
+
+aside #news-list li:nth-child(2) {
+    margin-bottom: 1em
+}
+
+aside #news-list li a::before {
+    content: "› ";
+    font-size: 1.2em
+}
+
+li p {
+    font-size: 1.2rem;
+    color: #494D50
+}
+
+footer {
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: #11243d;
+    color: #A8AFB8;
+    padding: 2em 0;
+    margin: 0 auto
+}
+
+footer h2 {
+    font-size: 1.6rem;
+    font-family: "EB garamond", serif;
+    color: #A8AFB8;
+    margin-bottom: .5em
+}
+
+footer section {
+    margin-bottom: 2em
+}
+
+footer section:first-child a:before {
+    content: "› ";
+    font-size: 1.2em
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    font-weight: lighter;
+    color: #A8AFB8
+}
+
+footer a:focus {
+    outline: dotted 2px #A8AFB8
+}
+
+@media screen and (min-width:68.75rem) {
+    header {
+        background-color: #E8EBEE;
+        border: none;
+        justify-content: center
+    }
+    #skip-link {
+        display: inline
+    }
+    #skip-link:focus {
+        transform: translate(-50%, -80%);
+        outline: none
+    }
+    #menu {
+        width: 100%;
+        background-color: #E8EBEE;
+        position: static;
+        visibility: visible
+    }
+    #menu #active-page a::before {
+        visibility: visible
+    }
+    #menu-link-list {
+        display: flex;
+        transform: translateY(-100%);
+        margin-left: 1em;
+        margin-right: 8rem
+    }
+    #menu-link-list li {
+        line-height: 1em;
+        padding: 0
+    }
+    #menu-link-list a {
+        font-weight: 500;
+        margin: 0 .5em
+    }
+    #inner-content,
+    footer {
+        max-width: 100rem
+    }
+    #inner-content {
+        padding: 4rem
+    }
+    main {
+        margin-left: 0
+    }
+    aside {
+        margin-right: 0
+    }
+}
+
+@media screen and (min-width:2500px) {
+    html {
+        font-size: 70%
+    }
+    #inner-content,
+    footer {
+        max-width: 108rem
+    }
+    #menu-link-list {
+        margin-left: 1em;
+        margin-right: 15rem
+    }
+}

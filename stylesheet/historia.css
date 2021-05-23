@@ -1,0 +1,30 @@
+figure {
+    text-align: center
+}
+
+figcaption {
+    text-align: center
+}
+
+dt {
+    color: #11243d;
+    font-weight: 900
+}
+
+dd {
+    padding-left: 1em;
+    font-size: 1.6rem;
+    font-style: italic
+}
+
+@media screen and (min-width:43.75rem) {
+    #story-stormnatt {
+        display: flex
+    }
+    #story-stormnatt section:first-child {
+        width: 60%
+    }
+    #story-stormnatt section:last-child {
+        margin-left: 5rem
+    }
+}

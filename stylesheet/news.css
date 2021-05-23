@@ -1,0 +1,24 @@
+img {
+    margin-bottom: 1em
+}
+
+main {
+    padding-top: 2.5rem
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    font-style: normal;
+    color: #51565C;
+    margin-bottom: 1em
+}
+
+@media screen and (min-width:68.75rem) {
+    main {
+        margin: 0
+    }
+    main {
+        padding-top: 0
+    }
+}

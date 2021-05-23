@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt - Djupvik </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheet/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheet/main.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheet/form.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&family=EB+Garamond&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../script/main.js" type="module"></script>
+    <script src="../script/form.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <a id="skip-link" href="#inner-content">Hoppa över navigering</a>
+
+        <a id="logo" href="../index.html" aria-label="Djupviks startsida">
+            <h1>Djupvik</h1>
+            <p>Ett fiskeläge på Gotland</p>
+        </a>
+        <nav>
+            <div id="menu">
+                <ul id="menu-link-list">
+                    <li><a href="gasthamn.html">Gästhamn</a></li>
+                    <li><a href="turistmal.html">Turistmål</a></li>
+                    <li id="active-page"><a href="#">Kontakt</a></li>
+                    <li><a href="medlemsinfo.html">Medlemsinfo</a></li>
+                    <li><a href="english.html">In English</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="inner-content">
+
+        <picture id="starting-image">
+            <source media="(max-width:699px)" srcset="../images/mobile/pojke_fiskar.jpg">
+
+            <source media="(min-width:700px)" srcset="../images/desktop/pojke_fiskar.jpg">
+
+            <img src="../images/desktop/pojke_fiskar.jpg" alt="" width="1125" height="633">
+        </picture>
+
+        <main>
+            <section>
+                <h2>Kontaktuppgifter</h2>
+
+                <address>
+                    Hamnfogde:&nbsp;Bo Lautin<br/>
+                    Mobil:&nbsp;070-792 03 10 <br/><br/>
+                    Djupviks hamnförening <br/>
+                    c/o Ekholm <br/>
+                    Eksta Hägur 170 <br/>
+                    623 54 Klintehamn 
+                </address>
+
+            </section>
+
+            <section>
+                <h2>Skicka ett meddelande</h2>
+                <p><strong>Obligatoriska fält är markerade med <span class="asterisk">&ast;</span></strong></p>
+                <form method="post">
+
+                    <fieldset id="form-about">
+                        <legend>Vad gäller ditt ärende?</legend>
+                        <div class="select"><select name="type" size="1"><option>Övrigt</option><option>Båtplats</option><option>Medlem</option></select></div>
+                        <p><label for="heading">Rubrik</label><input type="text" id="heading" name="head" maxlength="25"></p>
+                        <p><label class="required" for="msg-about">Beskrivning</label><textarea name="about" id="msg-about" rows="15" cols="29" required></textarea>
+                    </fieldset>
+
+                    <fieldset id="form-contact">
+                        <legend>Hur vill du bli kontaktad?</legend>
+                        <div class="select"><select><option>Mail </option><option>Telefon </option><option>Inte alls </option></select></div>
+                        <p><label class="required" for="tel">Telefon</label><input type="tel" id="tel" name="telephone" maxlength="25" required></p>
+                        <p><label class="required" for="email">E-post</label><input type="email" id="email" name="email-address" maxlength="25" required></p>
+                    </fieldset>
+
+                    <ul id="form-buttons">
+                        <li><input type="submit" value="Skicka"></li>
+                        <li><input type="reset" value="Återställ"></li>
+                    </ul>
+                </form>
+
+            </section>
+        </main>
+    </div>
+    <footer>
+        <section>
+            <h2>Kontakt</h2>
+            <p><span aria-hidden="true">&#9742; </span><span class="visually-hidden">Telefonnummer</span>070-792 03 10 </p>
+            <p><span aria-hidden="true">&#9993; </span><span class="visually-hidden">Epost</span>info@djupvikshamn.se </p><a href="kontakt.html">Skicka ett meddelande</a>
+        </section>
+
+        <section>
+            <h2>Hitta hit</h2><a href="https://goo.gl/maps/CnTrM78wU9hpmgd36" target="_blank" class="material-icons" aria-label="Djupvik på google maps">place</a>
+            <p>Djupviks hamn</p>
+            <p>623 54 Klintehamn</p>
+        </section>
+
+        <small>&copy;2020 Djupviks hamn</small>
+    </footer>
+</body>
+
+</html>

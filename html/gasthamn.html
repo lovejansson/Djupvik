@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gästhamn - Djupvik </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheet/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheet/main.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheet/main_aside_responsive.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheet/table.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&family=EB+Garamond&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../script/weather/main.js" type="module"></script>
+    <script src="../script/main.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <a id="skip-link" href="#inner-content">Hoppa över navigering</a>
+
+        <a id="logo" href="../index.html" aria-label="Djupviks startsida">
+            <h1>Djupvik</h1>
+            <p>Ett fiskeläge på Gotland</p>
+        </a>
+        <nav>
+            <div id="menu">
+                <ul id="menu-link-list">
+                    <li id="active-page"><a href="#">Gästhamn</a></li>
+                    <li><a href="turistmal.html">Turistmål</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="medlemsinfo.html">Medlemsinfo</a></li>
+                    <li><a href="english.html">In English</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="inner-content">
+
+        <picture id="starting-image">
+            <source media="(max-width:699px)" srcset="../images/mobile/djupviks_hamn.jpg">
+
+            <source media="(min-width:700px)" srcset="../images/desktop/djupviks_hamn.jpg">
+
+            <img src="../images/desktop/djupviks_hamn.jpg" alt="" width="1125" height="633">
+        </picture>
+
+        <main>
+            <h2>Gästhamn</h2>
+            <h3><strong>Gästbåtar är hjärtligt välkomna!</strong></h3>
+            <p>Vid normalvattendjup är djupet 3 meter i huvuddelen av hamnen. Vatten och el finns utdraget på kajerna. I land kan vi erbjuda ett modernt servicehus med WC, dusch och tvättmaskin. </p>
+
+            <h3>Pris</h3>
+            <p>Dygnshyra:&nbsp;150:-/dygn<span class="asterisk">&ast;</span><br/>El-anslutning:&nbsp;50:-/dygn</p>
+            <p><span class="asterisk">&ast;</span>inkluderat kort för tillträde till servicehuset och 20:- för två duschar.</p>
+            <p><strong>Ring gärna hamnfogden för att få reda på aktuellt läge: &nbsp;Bo Lautin, 070-792 03 10.</strong></p>
+        </main>
+
+        <aside id="weather">
+
+        </aside>
+    </div>
+    <footer>
+
+        <section>
+            <h2>Kontakt</h2>
+            <p><span aria-hidden="true">&#9742; </span><span class="visually-hidden">Telefonnummer</span>070-792 03 10 </p>
+            <p><span aria-hidden="true">&#9993; </span><span class="visually-hidden">Epost</span>info@djupvikshamn.se </p><a href="kontakt.html">Skicka ett meddelande</a>
+        </section>
+
+        <section>
+            <h2>Hitta hit</h2><a href="https://goo.gl/maps/CnTrM78wU9hpmgd36" target="_blank" class="material-icons" aria-label="Djupvik på google maps">place</a>
+            <p>Djupviks hamn</p>
+            <p>623 54 Klintehamn</p>
+        </section>
+
+        <small>&copy;2020 Djupviks hamn</small>
+    </footer>
+</body>
+
+</html>
