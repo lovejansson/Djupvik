@@ -1,4 +1,4 @@
-# Djupviks-hamn
+# Djupviks hamn
 Website for Djupviks hamn 
 
 Projekt gjort i en kurs "Dynamiska webbapplikationer" via Uppsalas universitet.
